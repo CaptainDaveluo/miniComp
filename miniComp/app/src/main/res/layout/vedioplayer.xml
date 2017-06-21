@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="250dp"
+            android:background="@drawable/searchbar_style"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="搜索"
+            android:background="@drawable/sos_but1_style"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="电影"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="电视剧"
+            android:layout_marginLeft="15dp"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="综艺"
+            android:layout_marginLeft="15dp"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="京剧"
+            android:layout_marginLeft="15dp"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="180dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vedio_imagevp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/vedio_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="图片标题"
+            android:textColor="@android:color/white"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="160dp"
+            >
+            <View
+                android:id="@+id/dot_0"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@drawable/page_indicator_focused"
+                />
+            <View
+                android:id="@+id/dot_1"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@drawable/page_indicator"
+                />
+            <View
+                android:id="@+id/dot_2"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@drawable/page_indicator"
+                />
+            <View
+                android:id="@+id/dot_3"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@drawable/page_indicator"
+                />
+            <View
+                android:id="@+id/dot_4"
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:background="@drawable/page_indicator"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/movie1"
+            android:layout_width="100dp"
+            android:layout_height="180dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/movie2" />
+
+        <ImageView
+            android:src="@drawable/movie3"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="180dp" />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:text="金刚:骷髅岛"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="美女与野兽"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="人民的名义"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/movie4"
+            android:layout_width="100dp"
+            android:layout_height="180dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/movie5" />
+
+        <ImageView
+            android:src="@drawable/movie6"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="180dp" />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:text="生化危机"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="长城"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="红楼梦"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

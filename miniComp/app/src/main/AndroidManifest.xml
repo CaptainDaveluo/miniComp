@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.debla.minicomp.minicomp">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="QfAzt2G0XnC5ddHjWjdoBxiQT5NkIs12" />
+        <activity android:name="com.debla.minicomp.Activity.GuideActivity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.debla.minicomp.Activity.GuideActivity.GuideActivity">
+        </activity>
+        <activity android:name="com.debla.minicomp.Activity.GuideActivity.OtherFragment"></activity>
+        <activity android:name="com.debla.minicomp.Activity.GuideActivity.MainActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.debla.minicomp.Activity.SimpleMode.SimDailActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.Public.AlmancActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.Public.WeatherActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.Public.ControlActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.Public.AppListActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.Public.SmsActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.Public.SettingActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.Contacts.ContactsActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.Public.HelpActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.Public.ToolsActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.Public.SOSActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.Public.SetDesktop"></activity>
+        <activity android:name="com.debla.minicomp.Activity.Public.ServiceActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.SoundHelper.SoundHelperActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.Public.LoginActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.ToolActivities.FlashLightActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.ToolActivities.MagnifierActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+        <activity android:name="com.debla.minicomp.Activity.ServiceActivities.NewsIndexActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.ServiceActivities.NewsActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.ServiceActivities.FootCountActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.ServiceActivities.RadioActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.ServiceActivities.VedioIndex"></activity>
+        <activity android:name="com.debla.minicomp.Activity.ToolActivities.HealthyActivity"></activity>
+        <activity android:name="com.debla.minicomp.Activity.ServiceActivities.NovelActivity"></activity>
+    </application>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+</manifest>
